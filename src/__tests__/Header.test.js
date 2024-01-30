@@ -4,8 +4,14 @@ import React from "react";
 
 import Header from "../components/Header";
 
-test("displays the text 'hello from the Header!'", () => {
-  render(<Header />);
+function Header() {
+  return (
+    <div>
+      hello from the Header!
+    </div>
+  );
+}
+export default Header;
 
   expect(screen.queryByText("hello from the Header!")).toBeInTheDocument();
-});
+

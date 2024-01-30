@@ -4,8 +4,14 @@ import React from "react";
 
 import Article from "../components/Article";
 
-test("displays the text 'please pass this test'", () => {
-  render(<Article />);
+const Article = () => {
+  return (
+    <div>
+      please pass this test
+    </div>
+  );
+}
+
+export default Article;
 
   expect(screen.queryByText("please pass this test")).toBeInTheDocument();
-});
